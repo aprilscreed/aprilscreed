@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aprilscreed</title>
-    <link rel="icon" type="image/x-icon" href="assets/bogForrest.ico"> <!-- Link to your favicon -->
+    <link rel="icon" type="image/png" href="assets/bogForrest.png"> <!-- Link to your favicon -->
     <style>
         body, html {
             height: 100%;
             margin: 0;
             font-family: 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .bg-image {
             /* The image used */
             background-image: url('assets/bogForrest.png');
 
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
+            /* Ensure the image covers the full viewport */
             background-size: cover;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            /* Take up the full viewport */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
 
         .centered-text {
-            position: absolute;
             text-align: center;
-            width: 75%; /* 3/4 of the parent container which is the image */
-            color: black;
-            font-size: calc(10px + 2vmin); /* Responsive font size */
+            color: white; /* Change text color to white */
+            font-size: 10vw; /* Adjust this size for 3/4 of the width, responsive to viewport */
+            width: 75%; /* Ensures text stays within 3/4 of the page */
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-<div class="bg-image">
+    <div class="bg-image"></div> <!-- The full-screen background image -->
+    
     <div class="centered-text">
         aprilscreed
     </div>
-</div>
 
 </body>
 </html>
