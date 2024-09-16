@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aprilscreed</title>
-    <link rel="icon" type="image/png" href="assets/bogForrest.png"> <!-- Link to your favicon -->
+    <!-- Correct favicon link -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/aprilscreed/aprilscreed/main/assets/bogForrest.ico">
     <style>
         body, html {
             height: 100%;
@@ -18,12 +19,12 @@
         .bg-image {
             /* The image used */
             background-image: url('assets/bogForrest.png');
-
+            
             /* Ensure the image covers the full viewport */
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-
+            
             /* Take up the full viewport */
             position: absolute;
             width: 100%;
@@ -33,10 +34,14 @@
 
         .centered-text {
             text-align: center;
-            color: white; /* Change text color to white */
-            font-size: 10vw; /* Adjust this size for 3/4 of the width, responsive to viewport */
+            color: white; /* Text color is white */
+            font-size: 10vw; /* Adjust this size for 3/4 of the width */
             width: 75%; /* Ensures text stays within 3/4 of the page */
             font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height to ensure vertical centering */
         }
     </style>
 </head>
